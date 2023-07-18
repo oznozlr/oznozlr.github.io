@@ -1,0 +1,461 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'DM Sans', sans-serif;
+ 
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  
+  
+}
+
+
+
+/*=============================================
+=          Section  "Bölüm Adı"         =
+=============================================*/
+
+/* Bölüm ile ilgili css kodlar buraya yazılacak */
+/* İlk mobilden kodlamaya başlıyoruz ve aşağıdaki mediaların içine tablet ve desktop olarak değiştiriyoruz */
+
+/* Tablet */
+@media (min-width: 320px) {
+
+    /* -- container ---  */
+    .outContainer{
+        background-color: #FFB400;
+    }
+    .outContainerAlt {
+        background-color: #FFFFFF;
+        border: 0px solid red;
+    }
+    .container{
+        padding: 0 25px;
+    }
+
+    /*  --- header  ---- */
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 15px;
+    }
+    .header a{
+        text-decoration: none;
+        color:#FFFFFF;
+        font-weight: 700;
+
+    }
+
+    /*  --- sidenavbar   ----- */ 
+
+
+    .sidenav{
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #FFFFFF;
+        overflow-x:hidden;
+        padding-top: 60px;
+        transition: 0.5s;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+    .sidenav .item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1px solid #F0F0F6;
+        margin: 10px 25px;
+        padding: 5px 5px;
+
+    }
+    #main{
+        transition: margin-top .5s;
+        padding: 20px;
+    }
+    /*  -- profile  -- */
+    .sidenav .item img{
+        width: 150px;
+        height: 150px;
+    }
+    .item h4{
+        color: #2B2B2B;
+        font-weight: 500;
+        font-size: 18px;
+        font-style: normal;
+        margin: 5px 10px;
+    }
+    .item p{
+        color: #767676;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        margin: 0px 10px;
+
+    }
+    .socialMediaLink{
+        display: flex;
+        gap: 10px;
+        margin:10px 0px;
+    }
+    .sidenav .closeBtn{
+        text-decoration: none;
+        color: #18191A;
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    /* --- about  --- */
+    .aboutItem{
+        
+        display: flex;
+        justify-content: center;
+        
+        margin-bottom: 5px;
+
+    }
+    .aboutItem p{
+        color: #2B2B2B;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        padding: 3px 4px;
+    }
+    .aboutItemBgColor{
+        background-color: #FFB400;
+    }
+   .left{
+    align-items: flex-start!important;
+   }
+
+   /*  --- skills  --- */
+
+   .item h3{
+    color: #2B2B2B;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    padding-left: 12px;
+
+   }
+   .skillsItem{
+    display: flex;
+    margin: 5px 5px;
+    border-bottom:2px solid #FFB400;
+    border-radius: 2px;
+    gap: 150px;
+   }
+/*  --- extraskiils --- */
+
+
+.extraSkills li{
+    color: #767676;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    list-style: none;
+    display: flex;
+    margin-left: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.extraSkills img{
+    width: 15px!important;
+    height: 15px!important;
+}
+
+/*  --- indir buttonu ---*/
+
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    padding: 15px 15px;
+    background-color: #FFB400;
+    color: #18191A;
+    text-decoration: none;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.btn:hover{
+    color: #18191A;
+    font-weight: 600;
+}
+.btn img{
+    width: 18px!important;
+    height: 18px!important;
+
+}
+/* --- hero  --- */
+.hero{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    
+
+}
+.heroTxt{
+    display: flex;
+    flex-direction:column;
+    
+}
+.heroTxt h1{
+    color: #2B2B2B;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+
+}
+.heroTxtBgColor{
+    color: #FFB400;
+}
+.heroTxt p{
+    color: #767676;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+.heroTxt a{
+    width: 300px;
+    margin-top: 50px;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+/* --- skills ---- */
+
+.skills{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.skillsTop{
+    margin-top: 200px;
+}
+.skills h2{
+    color: #2B2B2B;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 15px 15px;
+}
+.skillsList{
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+.skillsList li{
+    color: #767676;
+    list-style: none;
+
+
+}
+.skillsBoxs{
+    display: grid;
+    grid-template-columns: 1fr ;
+}
+.skillsBoxs{
+    display: grid;
+    grid-template-columns: repeat(1, 310px);
+    grid-template-rows: repeat(6, 225px);
+    justify-content:space-around;
+    margin: 100px 25px;
+    gap: 15px;
+   
+}
+.skillsBox{
+    display: grid;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    gap: 15px;
+    border-radius: 10px;
+    
+}
+.skillsBox p{
+    color: #2B2B2B;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+}
+.skillsBox img{
+    width: 68px;
+    height: 68px;
+}
+
+/*  --- education  --- */
+.education{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+.education h2{
+    color: #2B2B2B;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 15px 15px;
+}
+.educationBoxs{
+    display: flex;
+    flex-direction: column;
+    margin: 100px 25px;
+    gap: 15px;
+    border: 0px solid red;
+    width: 100%;
+    align-items: center;
+}
+.educationBox{
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    width: 100%;
+    justify-content:flex-start;
+    margin: 5px 5px;
+    padding: 15px 75px;
+    
+    border-radius: 10px;
+}
+.educationBoxLeft span{
+    padding: 5px 5px;
+    background-color: #FFB400;
+    border-radius: 5px;
+}
+.educationBoxLeft h4{
+    color: #2B2B2B;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    margin: 10px 0px;
+}
+.educationBoxLeft a{
+    color: #F0F0F6;
+    padding: 10px 0px;
+    text-decoration: none;
+}
+.educationBoxLeft a:hover{
+    color:#2B2B2B;
+   
+}
+.educationBoxLeft p{
+    color: #2B2B2B;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 10px 0px;
+}
+.educationBoxRight h4{
+    color: #18191A;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+}
+.educationBoxRight p{
+    color: #2B2B2B;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 10px 0px;
+}
+
+
+    
+
+
+    
+
+}
+
+@media screen and (max-height: 450px){
+
+    .sidenav {padding-top: 15px;}
+    .sidenav a{font-size: 18px;}
+}
+    
+
+
+/* Desktop */
+@media (min-width: 1200px) {
+
+    .container{
+        width: 1100px;
+        margin: 0 auto;
+    }
+    .hero{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .skillsBoxs{
+        display: grid;
+        grid-template-columns: repeat(3, 310px);
+        grid-template-rows: repeat(2, 225px);
+    }
+    .educationBox{
+        display: flex;
+        
+    }
+    
+    
+    
+
+    
+
+}
+
+/*=====  End of Section "Bölüm Adı"  ======*/
