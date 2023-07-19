@@ -125,7 +125,8 @@ h6 {
     /*  -- profile  -- */
     .sidenav .item img{
         width: 150px;
-        height: 150px;
+        height: 180px;
+        
     }
     .item h4{
         color: #2B2B2B;
@@ -245,6 +246,11 @@ h6 {
     flex-direction: column-reverse;
     align-items: center;
     
+
+}
+.hero img{
+    width: 100%;
+    height: auto;
 
 }
 .heroTxt{
@@ -440,6 +446,11 @@ h6 {
     .hero{
         display: flex;
         flex-direction: row-reverse;
+    }
+    .hero img{
+        width: 35%;
+        height: auto;
+    
     }
     .skillsBoxs{
         display: grid;
