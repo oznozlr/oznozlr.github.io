@@ -246,6 +246,7 @@ h6 {
     flex-direction: column-reverse;
     align-items: center;
     
+    
 
 }
 .hero img{
@@ -265,6 +266,7 @@ h6 {
     font-weight: 700;
 
 }
+
 .heroTxtBgColor{
     color: #FFB400;
 }
@@ -446,6 +448,7 @@ h6 {
     .hero{
         display: flex;
         flex-direction: row-reverse;
+        margin-top: 50px;
     }
     .hero img{
         width: 35%;
