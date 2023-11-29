@@ -1,0 +1,25 @@
+{
+    "navigation": {
+        "links": {
+            "cities": "Sehirler",
+            "experience": "Deneyimler"
+        }
+    },
+    "buttons":{
+        "readMore": "Daha Fazla"
+    },
+    "ctaCard": {
+        "title":"Benimle Keşfedin!",
+        "description": "Dünyayı keşfet ben! Türkiye'nin birçok büyük şehrini gezdim ve şu anda da geziyorum... Bana katılın'.",
+        "buttons": "Bize Katıl",
+        "placeholder": "e-mail adresinizi yazınız.",
+        "subscriberText1": "Bize katılın",
+        "subscriberText2": "şimdi aboneler!"
+    },
+    "footer": {
+        "description": "Dünyanın her yerindeki deneyimleri ve şehirleri paylaşan minimal ve sevimli bir seyahat blogu!",
+        "rightText": "Tüm hakları saklıdır. | Copyright",
+        "creatorText": "Tarafından oluşturuldu",
+        "currentlyAtText": "Şu anda"
+    }
+}
